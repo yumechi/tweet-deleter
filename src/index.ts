@@ -29,7 +29,7 @@ const main = async () => {
   try {
     const statuses = await twitter.getAllTweets()
 
-    const now = new Date()
+    const now = new Date(2020, 11, 1, 0, 0, 0)
     const tokyoTimezoneOffset = -9 * 1000 * 60 * 60
     const yesterday0oclock = new Date(
       now.valueOf()
